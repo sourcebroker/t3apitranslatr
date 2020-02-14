@@ -1,10 +1,10 @@
 <?php
 
-namespace SourceBroker\T3ApiTranslatr\Domain\Model;
+namespace SourceBroker\T3apitranslatr\Domain\Model;
 
 use SourceBroker\T3api\Annotation as T3api;
 use SourceBroker\T3api\Filter\ContainFilter;
-use SourceBroker\T3ApiTranslatr\Filter\SearchTranslationFilter;
+use SourceBroker\T3apitranslatr\Filter\SearchTranslationFilter;
 
 /**
  * Label

@@ -1,22 +1,22 @@
 <?php
 /** @var string $_EXTKEY */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 't3api-translatr',
-    'description' => '',
+    'title' => 'Language labels as JSON',
+    'description' => 'Connector between ext:t3api and ext:translator which allows to get language labels as JSON.',
     'category' => 'module',
     'author' => '',
     'author_email' => '',
     'state' => 'stable',
     'internal' => '',
-    'uploadfolder' => '1',
+    'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
     'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-9.5.999',
-            'translatr' => '',
-            't3api' => ''
+            'typo3' => '9.5.0-9.5.999',
+            'translatr' => '1.0.0-1.99.999',
+            't3api' => '0.2.0-0.99.999'
         ],
         'conflicts' => [
         ],

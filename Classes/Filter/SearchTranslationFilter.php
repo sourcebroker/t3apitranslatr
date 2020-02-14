@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SourceBroker\T3ApiTranslatr\Filter;
+namespace SourceBroker\T3apitranslatr\Filter;
 
 use SourceBroker\T3api\Domain\Model\ApiFilter;
 use SourceBroker\T3api\Filter\SearchFilter;
@@ -14,7 +14,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 /**
  * Class SearchTranslationFilter
- * @package SourceBroker\T3ApiTranslatr\Filter
+ * @package SourceBroker\T3apitranslatr\Filter
  */
 class SearchTranslationFilter extends SearchFilter
 {

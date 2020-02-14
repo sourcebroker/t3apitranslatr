@@ -1,5 +1,5 @@
 config.tx_extbase.persistence.classes {
-    SourceBroker\T3ApiTranslatr\Domain\Model\Label {
+    SourceBroker\T3apitranslatr\Domain\Model\Label {
         mapping {
             tableName = tx_translatr_domain_model_label
         }

@@ -1,0 +1,27 @@
+{
+  "name": "sourcebroker/t3apitranslator",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Bridge between ext:t3api and ext:translator which allows to get language labels as JSON.",
+  "authors": [
+    {
+      "name": "SourceBroker Team",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^9.5",
+    "sourcebroker/t3api": "~0.2",
+    "sourcebroker/translatr": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SourceBroker\\T3apitranslatr\\": "Classes"
+    }
+  },
+  "replace": {
+    "typo3-ter/t3apitranslatr": "self.version"
+  }
+}
