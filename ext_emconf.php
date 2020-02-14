@@ -2,7 +2,7 @@
 /** @var string $_EXTKEY */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Language labels as JSON',
-    'description' => 'Connector between ext:t3api and ext:translator which allows to get language labels as JSON.',
+    'description' => 'Connector between ext:t3api and ext:translatr which allows to get language labels as JSON.',
     'category' => 'module',
     'author' => '',
     'author_email' => '',

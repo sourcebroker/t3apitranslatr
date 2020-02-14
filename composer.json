@@ -4,7 +4,7 @@
     "GPL-2.0-or-later"
   ],
   "type": "typo3-cms-extension",
-  "description": "Bridge between ext:t3api and ext:translator which allows to get language labels as JSON.",
+  "description": "Bridge between ext:t3api and ext:translatr which allows to get language labels as JSON.",
   "authors": [
     {
       "name": "SourceBroker Team",
