@@ -7,12 +7,18 @@ use SourceBroker\T3api\Filter\ContainFilter;
 use SourceBroker\T3apitranslatr\Filter\SearchTranslationFilter;
 
 /**
- * Label
  * @T3api\ApiResource (
  *     collectionOperations={
  *          "get"={
  *              "path"="/translations",
- *          }
+ *              "normalizationContext"={
+ *                  "groups"={"api_translation_label_get_collection"}
+ *              },
+ *          },
+ *     },
+ *     attributes={
+ *          "pagination_items_per_page"=9999,
+ *          "maximum_items_per_page"=9999,
  *     },
  * )
  * @T3api\ApiFilter (ContainFilter::class, properties={"tags"})
@@ -20,4 +26,21 @@ use SourceBroker\T3apitranslatr\Filter\SearchTranslationFilter;
  */
 class Label extends \SourceBroker\Translatr\Domain\Model\Label
 {
+    /**
+     * @var string
+     *
+     * @T3api\Serializer\Groups({
+     *     "api_translation_label_get_collection",
+     * })
+     */
+    protected $ukey;
+
+    /**
+     * @var string
+     *
+     * @T3api\Serializer\Groups({
+     *     "api_translation_label_get_collection",
+     * })
+     */
+    protected $text;
 }
