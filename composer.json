@@ -13,7 +13,7 @@
   ],
   "require": {
     "typo3/cms-core": "^9.5",
-    "sourcebroker/t3api": "~0.2",
+    "sourcebroker/t3api": "~0.5",
     "sourcebroker/translatr": "^1.0"
   },
   "autoload": {

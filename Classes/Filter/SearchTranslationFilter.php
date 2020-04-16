@@ -33,34 +33,12 @@ class SearchTranslationFilter extends SearchFilter
         QueryInterface $query,
         ApiFilter $apiFilter
     ): ?ConstraintInterface {
-        $defaultLanguageCode = $this->getDefaultLanguageCode();
-        $values = array_map(function ($v) use ($defaultLanguageCode) {
-            return $v === $defaultLanguageCode ? 'default' : $v;
-        }, (array)$values);
-
+        // get all labels for default language as they will be localized by LocalizationUtility::translate() in Label model
         return parent::filterProperty(
             $property,
-            $values,
+            'default',
             $query,
             $apiFilter
         );
-    }
-
-    /**
-     * @return SiteLanguage
-     */
-    protected function getDefaultLanguageCode(): ?string
-    {
-        $code = null;
-        /** @var Site $site */
-        $site = $GLOBALS['TYPO3_REQUEST']->getAttribute('site');
-        foreach ($site->getAllLanguages() as $language) {
-            if ($language->getTypo3Language() === 'default') {
-                $code = $language->getTwoLetterIsoCode();
-                break;
-            }
-        }
-
-        return $code;
     }
 }

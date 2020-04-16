@@ -5,6 +5,7 @@ namespace SourceBroker\T3apitranslatr\Domain\Model;
 use SourceBroker\T3api\Annotation as T3api;
 use SourceBroker\T3api\Filter\ContainFilter;
 use SourceBroker\T3apitranslatr\Filter\SearchTranslationFilter;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
  * @T3api\ApiResource (
@@ -43,4 +44,9 @@ class Label extends \SourceBroker\Translatr\Domain\Model\Label
      * })
      */
     protected $text;
+
+    public function getText()
+    {
+        return LocalizationUtility::translate('LLL:' . $this->llFile . ':' . $this->ukey);
+    }
 }
