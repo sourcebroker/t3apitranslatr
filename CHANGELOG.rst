@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+2.1.0
+~~~~~
+
+1) [TASK] Set compatibility with TYPO3 10 and with sourcebroker/translatr 2.0
+
 2.0.0
 ~~~~~
 
