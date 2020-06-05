@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+2.2.0
+~~~~~
+
+1) [TASK] Extend compatibility for sourcebroker/t3api to ^1.0.
+
 2.1.0
 ~~~~~
 
