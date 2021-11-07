@@ -1,6 +1,12 @@
 Changelog
 ---------
 
+2.3.0
+~~~~~
+
+1) [TASK] Add ddev.
+2) [TASK] Set compatibility with TYPO3 11 and with sourcebroker/translatr 4.0
+
 2.2.0
 ~~~~~
 
