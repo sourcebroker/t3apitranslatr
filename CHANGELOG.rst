@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+2.5.0
+~~~~~
+
+1) [TASK] Extend compatibility with sourcebroker/translatr 5.0
+
 2.4.0
 ~~~~~
 
