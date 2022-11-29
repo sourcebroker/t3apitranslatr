@@ -1,10 +1,16 @@
 Changelog
 ---------
 
+2.6.0
+~~~~~
+
+1) [TASK] Extend compatibility with sourcebroker/translatr ^5.0.
+
 2.5.0
 ~~~~~
 
-1) [TASK] Extend compatibility with sourcebroker/translatr 5.0
+1) [TASK] Extend compatibility for sourcebroker/t3api to ^2.0.
+
 
 2.4.0
 ~~~~~
