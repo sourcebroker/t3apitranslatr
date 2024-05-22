@@ -28,24 +28,20 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 class Label extends \SourceBroker\Translatr\Domain\Model\Label
 {
     /**
-     * @var string
-     *
      * @T3api\Serializer\Groups({
      *     "api_translation_label_get_collection",
      * })
      */
-    protected $ukey;
+    protected string $ukey;
 
     /**
-     * @var string
-     *
      * @T3api\Serializer\Groups({
      *     "api_translation_label_get_collection",
      * })
      */
-    protected $text;
+    protected string $text;
 
-    public function getText()
+    public function getText(): string
     {
         return LocalizationUtility::translate('LLL:' . $this->llFile . ':' . $this->ukey);
     }

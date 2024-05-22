@@ -1,6 +1,12 @@
 Changelog
 ---------
 
+master
+------
+
+1) [BREAKING] Drop support for TYPO3 ^9.5, ^10.4. Add support for TYPO3 12.
+
+
 2.6.0
 ~~~~~
 

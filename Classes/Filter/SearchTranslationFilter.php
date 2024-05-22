@@ -12,10 +12,6 @@ use TYPO3\CMS\Extbase\Persistence\Generic\Exception\UnexpectedTypeException;
 use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
-/**
- * Class SearchTranslationFilter
- * @package SourceBroker\T3apitranslatr\Filter
- */
 class SearchTranslationFilter extends SearchFilter
 {
     /**
@@ -28,7 +24,7 @@ class SearchTranslationFilter extends SearchFilter
      * @throws UnexpectedTypeException
      */
     public function filterProperty(
-        $property,
+        string $property,
         $values,
         QueryInterface $query,
         ApiFilter $apiFilter

@@ -12,9 +12,9 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^9.5 || ^10.4 || ^11.5",
-    "sourcebroker/t3api": "~0.5 || ^1.0 || ^2.0",
-    "sourcebroker/translatr": "^1.0 || ^2.0 || ^3.0 || ^4.0 || ^5.0"
+    "typo3/cms-core": "^11.5 || ^12.4",
+    "sourcebroker/t3api": "^1.0 || ^2.0 || @dev",
+    "sourcebroker/translatr": "^4.0 || ^5.0 || @dev"
   },
   "autoload": {
     "psr-4": {
