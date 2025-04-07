@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+3.1.0
+------
+
+1) [TASK] Extend dependency to sourcebroker/t3api 4.0.
+
 3.0.0
 ------
 
