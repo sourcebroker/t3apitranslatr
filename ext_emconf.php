@@ -10,11 +10,11 @@ $EM_CONF[$_EXTKEY] = [
     'internal' => '',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '3.0.0',
+    'version' => '3.2.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-12.4.999',
-            'translatr' => '4.0.0-6.99.999',
+            'typo3' => '11.5.0-13.4.999',
+            'translatr' => '4.0.0-7.99.999',
             't3api' => '1.0.0-4.99.999'
         ],
         'conflicts' => [

@@ -5,8 +5,6 @@ namespace SourceBroker\T3apitranslatr\Filter;
 
 use SourceBroker\T3api\Domain\Model\ApiFilter;
 use SourceBroker\T3api\Filter\SearchFilter;
-use TYPO3\CMS\Core\Site\Entity\Site;
-use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\Generic\Exception\UnexpectedTypeException;
 use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;

@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+3.2.0
+------
+
+1) [TASK] Add support for TYPO3 13
+
 3.1.0
 ------
 
