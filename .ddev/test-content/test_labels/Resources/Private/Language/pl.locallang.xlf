@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="pl" datatype="plaintext" original="EXT:test_labels/Resources/Private/Language/locallang.xlf" product-name="test_labels">
+        <body>
+            <trans-unit id="button.submit">
+                <source>Submit</source>
+                <target>Wyślij</target>
+            </trans-unit>
+            <trans-unit id="button.cancel">
+                <source>Cancel</source>
+                <target>Anuluj</target>
+            </trans-unit>
+            <trans-unit id="user.login">
+                <source>Log in</source>
+                <target>Zaloguj się</target>
+            </trans-unit>
+            <trans-unit id="user.logout">
+                <source>Log out</source>
+                <target>Wyloguj się</target>
+            </trans-unit>
+            <trans-unit id="untagged">
+                <source>Label without tag</source>
+                <target>Etykieta bez tagu</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Description: Run the code checks of the extension (PHP-CS-Fixer, Rector, PHPStan)
+## Usage: ci
+## Example: ddev ci
+
+set -e
+cd /var/www/$EXTENSION_KEY
+[ -d .Build/vendor ] || composer install --no-progress -n
+composer run ci:php:cs-fixer
+composer run ci:php:rector
+composer run ci:php:stan

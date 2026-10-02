@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Install TYPO3 13 and 14 LTS with EXT:t3apitranslatr
+## Usage: install-all
+## Example: ddev install-all
+
+set -e
+/mnt/ddev_config/commands/web/install-version.sh 13
+/mnt/ddev_config/commands/web/install-version.sh 14

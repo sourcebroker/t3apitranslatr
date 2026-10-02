@@ -31,6 +31,23 @@ To narrow the number of labels fetch you can use tags on ext:translator and get 
 
 ``/_api/translations?tags[]=general&tags[]=user``
 
+Development
+***********
+
+The ddev environment installs TYPO3 13 and 14 with the extension, a site with en / pl / de languages and the test
+labels of ``.ddev/test-content/test_labels`` (tags ``general`` and ``user``).
+
+::
+
+  ddev start
+  ddev install-all        # or ddev install-v13 / ddev install-v14
+  ddev test-api 14        # calls /_api/translations in all languages with and without tags
+  ddev ci                 # php-cs-fixer, rector, phpstan
+  ddev fix                # applies the fixes of rector and php-cs-fixer
+
+URLs: https://t3apitranslatr.ddev.site/, https://v13.t3apitranslatr.ddev.site/typo3/,
+https://v14.t3apitranslatr.ddev.site/typo3/ (admin / Joh316!!)
+
 Changelog
 *********
 

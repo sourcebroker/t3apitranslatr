@@ -1,0 +1,21 @@
+#!/bin/bash
+
+## Description: Call the /_api/translations endpoint of an installed TYPO3 instance in all languages
+## Usage: test-api [13|14]
+## Example: ddev test-api 14
+
+MAJOR=${1:-14}
+URL="https://v${MAJOR}.${DDEV_SITENAME}.ddev.site/_api/translations"
+
+# Put the root page into the page cache first, as in production: API requests are then handled in the
+# "cached frontend" scope, in which TYPO3 14 does not build the full TypoScript setup
+curl -sk -o /dev/null "https://v${MAJOR}.${DDEV_SITENAME}.ddev.site/"
+
+for query in "" "?tags[]=general" "?tags[]=general&tags[]=user"; do
+    for languageUid in 0 1 2; do
+        echo "▶ GET ${URL}${query}  (X-Locale: ${languageUid})"
+        curl -sk -g -H "X-Locale: ${languageUid}" "${URL}${query}" \
+            | jq -c 'if ."hydra:member" then ([."hydra:member"[] | {(.ukey): .text}] | add) else "ERROR: " + ."hydra:title" end' 2>/dev/null \
+            || curl -sk -g -H "X-Locale: ${languageUid}" "${URL}${query}" | head -c 500
+    done
+done

@@ -1,0 +1,9 @@
+tx_translatr {
+    languages {
+        pl = Polish
+        de = Deutsch
+    }
+    extensions {
+        10 = test_labels
+    }
+}

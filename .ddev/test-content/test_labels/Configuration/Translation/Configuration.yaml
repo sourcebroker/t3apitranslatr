@@ -1,0 +1,14 @@
+# Tags of the test labels, imported by "typo3 translatr:import:configuration".
+# Filter in the API: /_api/translations?tags[]=general&tags[]=user
+presets:
+  general: &general
+    tags: ['general']
+  user: &user
+    tags: ['user']
+ext:
+  test_labels:
+    locallang.xlf:
+      'button.submit': *general
+      'button.cancel': *general
+      'user.login': *user
+      'user.logout': *user

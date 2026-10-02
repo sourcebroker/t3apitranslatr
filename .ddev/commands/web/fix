@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Description: Apply the automatic code fixes of the extension (Rector, PHP-CS-Fixer)
+## Usage: fix
+## Example: ddev fix
+
+set -e
+cd /var/www/$EXTENSION_KEY
+[ -d .Build/vendor ] || composer install --no-progress -n
+composer run fix:php:rector
+composer run fix:php:cs-fixer
