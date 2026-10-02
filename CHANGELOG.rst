@@ -1,6 +1,16 @@
 Changelog
 ---------
 
+4.0.0
+------
+
+1) [BREAKING] Drop support for TYPO3 11 and 12. Add support for TYPO3 14.
+2) [TASK] Extend dependency to sourcebroker/t3api 5.0.
+3) [TASK] Add rector, php-cs-fixer and phpstan (level 6).
+4) [BUGFIX] Translate labels with the LanguageService of the site language. LocalizationUtility::translate() on TYPO3 14
+   reads the TypoScript setup, which is not available in the cached frontend scope.
+5) [TASK] Add ddev testing envs for TYPO3 13 and 14.
+
 3.2.0
 ------
 

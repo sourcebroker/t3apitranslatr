@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace SourceBroker\T3apitranslatr\Filter;
@@ -15,7 +16,7 @@ class SearchTranslationFilter extends SearchFilter
     /**
      * @param string $property
      * @param mixed $values
-     * @param QueryInterface $query
+     * @param QueryInterface<object> $query
      * @param ApiFilter $apiFilter
      * @return ConstraintInterface|null
      * @throws InvalidQueryException

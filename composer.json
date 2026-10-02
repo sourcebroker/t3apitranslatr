@@ -12,9 +12,17 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^11.5 || ^12.4 || ^13.4",
-    "sourcebroker/t3api": "^1.0 || ^2.0 || ^3.0 || ^4.0 || @dev",
-    "sourcebroker/translatr": "^4.0 || ^5.0 || ^6.0 || ^7.0 || @dev"
+    "php": "^8.2",
+    "typo3/cms-core": "^13.4 || ^14.3",
+    "sourcebroker/t3api": "^4.0 || ^5.0",
+    "sourcebroker/translatr": "^7.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.95",
+    "phpstan/phpstan": "^2.1",
+    "saschaegerer/phpstan-typo3": "^2.2 || ^3.1",
+    "ssch/typo3-rector": "^3.16",
+    "typo3/coding-standards": "^0.9.0"
   },
   "autoload": {
     "psr-4": {
@@ -24,9 +32,25 @@
   "replace": {
     "typo3-ter/t3apitranslatr": "self.version"
   },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin",
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
+    }
+  },
   "extra": {
     "typo3/cms": {
-      "extension-key": "t3apitranslatr"
+      "extension-key": "t3apitranslatr",
+      "web-dir": ".Build/Web"
     }
+  },
+  "scripts": {
+    "ci:php:stan": ".Build/bin/phpstan analyse --no-progress",
+    "ci:php:cs-fixer": ".Build/bin/php-cs-fixer fix --dry-run --diff",
+    "ci:php:rector": ".Build/bin/rector process --dry-run",
+    "fix:php:cs-fixer": ".Build/bin/php-cs-fixer fix",
+    "fix:php:rector": ".Build/bin/rector process"
   }
 }

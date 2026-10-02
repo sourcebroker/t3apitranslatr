@@ -1,4 +1,5 @@
 <?php
+
 /** @var string $_EXTKEY */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Language labels as JSON',
@@ -7,15 +8,12 @@ $EM_CONF[$_EXTKEY] = [
     'author' => '',
     'author_email' => '',
     'state' => 'stable',
-    'internal' => '',
-    'createDirs' => '',
-    'clearCacheOnLoad' => 0,
-    'version' => '3.2.0',
+    'version' => '4.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-13.4.999',
-            'translatr' => '4.0.0-7.99.999',
-            't3api' => '1.0.0-4.99.999'
+            'typo3' => '13.4.0-14.4.99',
+            'translatr' => '7.0.0-7.99.999',
+            't3api' => '4.0.0-5.99.999',
         ],
         'conflicts' => [
         ],
