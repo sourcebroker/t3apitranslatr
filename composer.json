@@ -15,7 +15,7 @@
     "php": "^8.2",
     "typo3/cms-core": "^13.4 || ^14.3",
     "sourcebroker/t3api": "^4.0 || ^5.0",
-    "sourcebroker/translatr": "^7.0"
+    "sourcebroker/translatr": "^8.0"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.95",

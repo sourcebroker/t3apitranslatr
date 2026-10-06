@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+5.0.0
+------
+
+1) [BREAKING] Require sourcebroker/translatr ^8.0.
+
 4.0.0
 ------
 
